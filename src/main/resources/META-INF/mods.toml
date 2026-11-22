@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="leakscan"
+version="1.0.0"
+displayName="LeakScan"
+displayTest="IGNORE_ALL_VERSION"
+description='''
+A client-side auditor of server technical information leaks: logs packets, tries tab-complete
+probes and looks for patterns (plugins, channels, versions, paths, IPs, hidden players/commands).
+'''
+
+[[dependencies.leakscan]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.leakscan]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="CLIENT"
